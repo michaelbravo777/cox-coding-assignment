@@ -110,11 +110,8 @@ class ConnectedForm extends Component {
     let hasError = false;
 
     let areaCode = (this.state.areaCode ? this.state.areaCode.length : 0);
-    console.log(areaCode)
     let prefix = (this.state.prefix ? this.state.prefix.length : 0);
-    console.log(prefix)
     let line = (this.state.line ? this.state.line.length : 0);
-    console.log(line)
 
     let totalDigits = areaCode + prefix + line
     if (totalDigits < 10) {
